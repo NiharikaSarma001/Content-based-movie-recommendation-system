@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Movie Recommendation System</title>
+    <link rel="stylesheet" href="{{ css }}">
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Movie Recommendation System</h1>
+    <form action="/recommend" method="POST">
+      <label for="title">Enter a movie title:</label>
+      <input type="text" name="title" id="title">
+      <input type="submit" value="Get Recommendations">
+    </form>
+  </body>
+</html>
+
