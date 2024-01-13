@@ -50,3 +50,32 @@ This repository contains the source code for a content-based movie recommendatio
 1. **Create a `requirements.txt` file:**
    ```bash
    pip freeze > requirements.txt
+
+2. **Create a 'Procfile':**
+   Create a file named Procfile (without any file extension) in your project directory and add the following line:
+     web: gunicorn app:app
+
+3. **Configure Heroku:**
+  -> Log in to your Heroku account using the Heroku CLI:
+     heroku login
+  -> create a new heroku app:
+     heroku create <your-app-name>
+
+4. **Push to heroku:**
+   git push heroku master
+
+5.**Scale your application:**
+   heroku ps:scale web=1
+
+6.**Open your application:**
+   heroku open
+
+7. **Visit your deployed app:**
+   You should now be able to visit your Flask app running on Heroku using the provided URL.
+
+## Additional Information
+The requirements.txt file lists all the required Python packages for your application.
+The Procfile tells Heroku how to run your application using Gunicorn.
+Ensure your Flask app instance is named app in your app.py file.
+
+**Feel free to explore, contribute, or adapt this project to suit your needs!**
