@@ -64,10 +64,10 @@ This repository contains the source code for a content-based movie recommendatio
 4. **Push to heroku:**
    git push heroku master
 
-5.**Scale your application:**
+5. **Scale your application:**
    heroku ps:scale web=1
 
-6.**Open your application:**
+6. **Open your application:**
    heroku open
 
 7. **Visit your deployed app:**
